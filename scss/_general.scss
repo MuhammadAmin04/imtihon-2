@@ -1,0 +1,44 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Pro Regular";
+  src: url(/assets/fonts/SFPRODISPLAYREGULAR.OTF);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Pro Bold";
+  src: url(/assets/fonts/SFPRODISPLAYBOLD.OTF);  
+  font-weight: 700;
+}
+
+@font-face {
+    font-family: "Pro Medium";
+    src: url(/assets/fonts/SFPRODISPLAYMEDIUM.OTF);
+    font-weight: 500;
+}
+body {
+  font-family: " Regular";
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    // color: #ffffff;
+  }
+}
+
