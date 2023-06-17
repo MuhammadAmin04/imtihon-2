@@ -81,6 +81,7 @@ nav {
 .vash-text-2 {
   color: #0071e4;
   cursor: pointer;
+  // text-decoration: underline;
 }
 
 .sub-nav__list {
@@ -111,6 +112,7 @@ nav {
   color: blue;
   transition: all 0.7s ease;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .tel {
@@ -227,6 +229,10 @@ nav {
 
 @media only screen and (max-width: 768px) {
   header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
     nav {
       // display: none;
       .moskva {
@@ -279,6 +285,41 @@ nav {
       }
     }
   }
-
- 
 }
+
+.lupa{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .resp-nav {
+    display: flex;
+    // justify-content: space-between;
+    width: 320px;
+    height: 40px;
+    column-gap: 200px;
+    // display: none;
+    .input {
+      display: none;
+      border: none;
+      .inner-input {
+        display: none;
+        }
+      }
+    }
+    .menu {
+      
+      .lupa{
+        display: block;
+        
+      }
+      display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      column-gap: 40px;
+
+      p {
+      display: none;
+      }
+    }
+  }
